@@ -1,5 +1,3 @@
-# CANMutVisual
-
 
 # CANMutVisual 
 
@@ -68,42 +66,46 @@ browseVignettes("CANMutVisual")
 ```
 
 An overview of the package is illustrated below:
+
+```
+.
+├── CANMutVisual.Rproj
+├── DESCRIPTION
+├── LICENSE
+├── NAMESPACE
+├── README.md
+├── Data
+│   ├── HGNC.tsv
+│   └── MutantData.tsv
+├── R
+│   ├── cosImport.R
+│   ├── gcountMut.R
+│   ├── gene_mut_plot.R
+│   ├── mut_cds.R
+│   └── plot_cds.R
+├── man
+│   │
+│   └── hello.Rd
+├── inst
+│   └── extdata
+│       └── CANMutVisual.png
+├── tests
+│   ├── testthat
+│   │   ├── test_cosImport.R
+│   │   ├── test_countMut.R
+│   │   ├── test_gene_mut_plot.R
+│   │   ├── test_mut_cds.R
+│   │   └── test_plot_cds.R
+│   └── testthat.R
+└── vignettes
+    ├── plot_top_15_result.png
+    ├── cosImport_result.png
+    ├── countMut_result.png
+    ├── mut_cds_result.png
+    ├── cosImport_result.png
+    └── plot_cds_result.png
+```
 ![](./inst/extdata/CANMutVisual_Overview.png)
-
-The package tree structure follows:
-
-- 
-  |- CANMutVisual.Rproj
-  |- DESCRIPTION
-  |- LICENSE
-  |- NAMESPACE
-  |- README.md
-  |- Data
-    |- HGNC.tsv
-    |- MutantData.tsv
-  |- R
-    |- cosImport.R
-    |- countMut.R
-    |- gene_mut_plot.R
-    |- mut_cds.R
-    |- plot_cds.R
-  |- man
-    |- hello.Rd
-  |- tests
-    |- testthat.R
-    |- testthat
-      |- test_cosImport.R
-      |- test_countMut.R
-      |- test_gene_mut_plot.R
-      |- test_mut_cds.R
-      |- test_plot_cds.R
-  |- Vignette
-    |- plot_top_15_result.png
-    |- cosImport_result.png
-    |- countMut_result.png
-    |- mut_cds_result.png
-    |- plot_cds_result.png
-    
 
 
 ## Contributions
