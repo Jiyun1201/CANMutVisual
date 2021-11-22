@@ -28,16 +28,16 @@
 #' R Archive Network. Retrieved November 21, 2021,
 #' from https://cran.r-project.org/web/packages/readr/index.html.
 #'
-#'@export
 #'@import readr read_tsv
 #'############################################################################################
-
+library(readr)
 cosImport <- function(mutFile, hgncFile){
-
   # read .tsv COSMIC file using readr package
+  #"c" representing col_character()
+  #Specify each column types
   readCos <- readr::read_tsv(mutFile,
-                             col_types = cols_only("GENE_NAME" = "c", #Specify each column types
-                                                   "ACCESSION_NUMBER" = "c", #"c" representing col_character()
+                             col_types = cols_only("GENE_NAME" = "c",
+                                                   "ACCESSION_NUMBER" = "c",
                                                    "GENE_CDS_LENGTH" = "c",
                                                    "HGNC_ID" = "c",
                                                    "SAMPLE_NAME" = "c",

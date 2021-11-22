@@ -17,10 +17,10 @@
 #' @export
 ############################################################################################
 
-# source cosImport.R file to use the cosImport function in this script
-source("R/cosImport.R")
 
 countMut <- function(mutFile, hgncFile){ #Two input files to process cosimport function
+  # source cosImport.R file to use the cosImport function in this script
+  source("R/cosImport.R")
 
   # use cosImport function to get total data read from cosmic file
   dataImp <- cosImport(mutFile, hgncFile)

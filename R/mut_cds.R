@@ -21,9 +21,9 @@
 #' from https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html.
 #'
 #' @import stringr str_sub
-#' @export
 ############################################################################################
 
+library(stringr)
 
 mut_cds <- function(mutFile, hgncFile){
   # source cosImport.R file to use the cosImport function in this script

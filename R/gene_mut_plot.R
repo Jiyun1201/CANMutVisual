@@ -19,11 +19,16 @@
 #' Retrieved November 22, 2021, from https://cran.r-project.org/web/packages/
 #' plotrix/index.html.
 #'
-#'
+#' @import plotrix pie3D
 ############################################################################################
 
 
 plot_top_15 <- function(mutFile, hgncFile){
+  if (! requireNamespace("plotrix", quietly = TRUE)) {
+    install.packages("plotrix")
+  }
+  library(plotrix)
+
   # source countMut.R file to use the countMut function in this script
   source("R/countMut.R")
 
