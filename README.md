@@ -62,7 +62,7 @@ frequency data of each mutation and return barplot using the data extracted
 Refer to vignette for more details:
 
 ``` r
-browseVignettes("CANMutVisualVignette")
+browseVignettes(package = "CANMutVisual")
 ```
 
 An overview of the package is illustrated below:
