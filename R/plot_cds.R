@@ -24,7 +24,7 @@
 #'  intelligence/9781783988785/6/ch06lvl1sec69/displaying-values-on-top-of-or-
 #'  next-to-the-bars.
 #'
-#'   @export
+#' @export
 #'
 #'
 plot_cds <- function(mutFile, hgncFile){

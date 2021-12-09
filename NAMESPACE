@@ -2,6 +2,7 @@
 
 export()
 export(countMut)
+export(plot_cds)
 export(runCANMutVisual)
 import(plotrix)
 importFrom(readr,read_tsv)

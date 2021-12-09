@@ -29,11 +29,9 @@ of each mutation and return barplot using the data extracted
 Kabacoff , R. (n.d.). Bar plots. Quick-R: Bar Plots. Retrieved November 21,
 2021, from https://www.statmethods.net/graphs/bar.html.
 
-Abedin, J., &amp; Mittal, H. V. (n.d.). R Graphs. R Graphs Cookbook (Second
+Abedin, J., & Mittal, H. V. (n.d.). R Graphs. R Graphs Cookbook (Second
 Edition) - Displaying values on top of or next to the bars. Retrieved November
- 21, 2021, from https://subscription.packtpub.com/book/big_data_and_business_
- intelligence/9781783988785/6/ch06lvl1sec69/displaying-values-on-top-of-or-
- next-to-the-bars.
-
-  @export
+21, 2021, from https://subscription.packtpub.com/book/big_data_and_business_
+intelligence/9781783988785/6/ch06lvl1sec69/displaying-values-on-top-of-or-
+next-to-the-bars.
 }

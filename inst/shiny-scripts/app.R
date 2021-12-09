@@ -1,6 +1,6 @@
 library(shiny)
 
-#' @ references
+#' @references
 #' ShinyApp Layout a sidebar and Main Area. Shiny. (n.d.). Retrieved December 9, 2021,
 #' from https://shiny.rstudio.com/reference/shiny/1.7.0/sidebarLayout.html.
 #'

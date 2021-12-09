@@ -20,9 +20,8 @@
 #' Operations. Introduction to stringr. Retrieved November 21, 2021,
 #' from https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html.
 #'
-#' @export
 #' @importFrom  stringr str_sub
-#'
+#' @export
 #'
 library(stringr)
 

@@ -14,9 +14,8 @@
 #' @references
 #' https://shiny.rstudio.com/tutorial/
 #'
-#' @export
-#'
 #' @importFrom shiny runApp
+#' @export
 #'
 #'
 runCANMutVisual <- function(){

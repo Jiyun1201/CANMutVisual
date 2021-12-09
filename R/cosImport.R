@@ -28,8 +28,8 @@
 #' R Archive Network. Retrieved November 21, 2021,
 #' from https://cran.r-project.org/web/packages/readr/index.html.
 #'
-#' @export
 #'@importFrom readr read_tsv
+#'@export
 #'
 library(readr)
 cosImport <- function(mutFile, hgncFile){
