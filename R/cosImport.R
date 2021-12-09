@@ -11,7 +11,7 @@
 #' MUTATION_CDS, MUTATION_AA, MUTATION_DESCRIPTION, SAMPLE_TYPE, TUMOUR_ORIGIN,
 #' and the additional column that the function inserts: IDsymbol
 #'
-#' @example
+#' @examples
 #' # Using data files available in the package: "MutantData.tsv" and "HGNC.tsv"
 #'
 #' # cosImport("Data/MutantData.tsv", "Data/HGNC.tsv")
@@ -28,26 +28,26 @@
 #' R Archive Network. Retrieved November 21, 2021,
 #' from https://cran.r-project.org/web/packages/readr/index.html.
 #'
-#'@import readr read_tsv
-#'############################################################################################
+#' @export
+#'@importFrom readr read_tsv
+#'
 library(readr)
 cosImport <- function(mutFile, hgncFile){
   # read .tsv COSMIC file using readr package
   #"c" representing col_character()
   #Specify each column types
-  readCos <- readr::read_tsv(mutFile,
-                             col_types = cols_only("GENE_NAME" = "c",
-                                                   "ACCESSION_NUMBER" = "c",
-                                                   "GENE_CDS_LENGTH" = "c",
-                                                   "HGNC_ID" = "c",
-                                                   "SAMPLE_NAME" = "c",
-                                                   "GENOMIC_MUTATION_ID" = "c",
-                                                   "MUTATION_ID" = "c",
-                                                   "MUTATION_CDS" = "c",
-                                                   "MUTATION_AA" = "c",
-                                                   "MUTATION_DESCRIPTION" = "c",
-                                                   "SAMPLE_TYPE" = "c",
-                                                   "TUMOUR_ORIGIN" = "c"))
+  readCos <- readr::read_tsv(mutFile, col_types = cols_only('GENE_NAME' = "c",
+                                                            "ACCESSION_NUMBER" = "c",
+                                                            "GENE_CDS_LENGTH" = "c",
+                                                            "HGNC_ID" = "c",
+                                                            "SAMPLE_NAME" = "c",
+                                                            "GENOMIC_MUTATION_ID" = "c",
+                                                            "MUTATION_ID" = "c",
+                                                            "MUTATION_CDS" = "c",
+                                                            "MUTATION_AA" = "c",
+                                                            "MUTATION_DESCRIPTION" = "c",
+                                                            "SAMPLE_TYPE" = "c",
+                                                            "TUMOUR_ORIGIN" = "c"))
 
   # extract only the HGNC_ID column and save as cos_id
   cos_id <- readCos$'HGNC_ID'
@@ -84,3 +84,5 @@ cosImport <- function(mutFile, hgncFile){
   return (readCos)
 }
 #[END]
+
+

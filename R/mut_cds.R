@@ -10,7 +10,7 @@
 #'
 #' @return Returns dataframe with MUTATION_CDS and each of its frequency.
 #'
-#' @example
+#' @examples
 #' # Using data files available in the package: "MutantData.tsv" and "HGNC.tsv"
 #'
 #' # mut_cds("Data/MutantData.tsv", "Data/HGNC.tsv")
@@ -20,17 +20,18 @@
 #' Operations. Introduction to stringr. Retrieved November 21, 2021,
 #' from https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html.
 #'
-#' @import stringr str_sub
-############################################################################################
-
+#' @export
+#' @importFrom  stringr str_sub
+#'
+#'
 library(stringr)
 
 mut_cds <- function(mutFile, hgncFile){
   # source cosImport.R file to use the cosImport function in this script
-  source("R/cosImport.R")
+  #source("R/cosImport.R")
 
   #import complete cosmic data from cosImport function
-  dataImp <- cosImport(mutFile, hgncFile)
+  dataImp <- CANMutVisual::cosImport(mutFile, hgncFile)
 
   # save MUTATION_CDS column as cds_raw dataframe
   cds_raw <- dataImp$MUTATION_CDS

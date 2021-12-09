@@ -93,6 +93,13 @@ CANMutVisual::plot_cds("Data/MutantData.tsv", "Data/HGNC.tsv")
 ```
 
 ![](./plot_cds_result.png)
+
+**5. runCANMutVisual** function runs shiny app to allow users with limited understanding of R language to be able to use the package to visualize and analyze data. 
+
+``` {r eval=FALSE}
+CANMutVisual::runCANMutVisual()
+```
+
 <br>
 
 ## References

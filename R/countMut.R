@@ -9,21 +9,20 @@
 #'
 #' @return Returns dataframe with gene names and frequency.
 #'
-#' @example
+#' @examples
 #' # Using data files available in the package: "MutantData.tsv" and "HGNC.tsv"
 #'
 #' # countMut("Data/MutantData.tsv", "Data/HGNC.tsv")
 #'
 #' @export
-############################################################################################
-
-
+#'
+#'
 countMut <- function(mutFile, hgncFile){ #Two input files to process cosimport function
   # source cosImport.R file to use the cosImport function in this script
-  source("R/cosImport.R")
+  #source("R/cosImport.R")
 
   # use cosImport function to get total data read from cosmic file
-  dataImp <- cosImport(mutFile, hgncFile)
+  dataImp <- CANMutVisual::cosImport(mutFile, hgncFile)
 
   # get IDsymbol column
   symbol_gene <- dataImp$IDsymbol

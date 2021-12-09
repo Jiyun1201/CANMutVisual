@@ -9,7 +9,7 @@
 #' @return Returns 3D pie chart containing top 15 most occureing gene names in a
 #' specific cancer type using gene frequency data obtained from countMut function
 #'
-#' @example
+#' @examples
 #' # Using data files available in the package: "MutantData.tsv" and "HGNC.tsv"
 #'
 #' # plot_top_15("Data/MutantData.tsv", "Data/HGNC.tsv")
@@ -19,21 +19,24 @@
 #' Retrieved November 22, 2021, from https://cran.r-project.org/web/packages/
 #' plotrix/index.html.
 #'
-#' @import plotrix pie3D
-############################################################################################
+#' @export
+#' @import plotrix
+#'
+#'
 
+if (! requireNamespace("plotrix", quietly = TRUE)) {
+  install.packages("plotrix")
+}
+library(plotrix)
 
 plot_top_15 <- function(mutFile, hgncFile){
-  if (! requireNamespace("plotrix", quietly = TRUE)) {
-    install.packages("plotrix")
-  }
-  library(plotrix)
+
 
   # source countMut.R file to use the countMut function in this script
-  source("R/countMut.R")
+  #source("R/countMut.R")
 
   # get gene frequency data using countMut function
-  mut_gene <- countMut(mutFile, hgncFile)
+  mut_gene <- CANMutVisual::countMut(mutFile, hgncFile)
 
   # order them in descending order
   mut_gene <- mut_gene[order(mut_gene$Freq, decreasing = TRUE), ]
