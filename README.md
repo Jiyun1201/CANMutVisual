@@ -109,6 +109,8 @@ An overview of the package is illustrated below:
 ```
 ![](./inst/extdata/CANMutVisual_Overview.png)
 
+![](./inst/extdata/shiny.png)
+
 
 ![](./inst/extdata/shiny.png)
 
