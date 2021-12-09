@@ -25,9 +25,11 @@ To install the latest version of CANMutVisual pacakge:
 require("devtools")
 devtools::install_github("Jiyun1201/CANMutVisual", build_vignettes = TRUE)
 library("CANMutVisual")
+```
 
 To run the shinyApp:
-Under construction
+``` r
+CANMutVisual::runCANMutVisual()
 ```
 
 ## Overview
