@@ -19,8 +19,9 @@
 #' Retrieved November 22, 2021, from https://cran.r-project.org/web/packages/
 #' plotrix/index.html.
 #'
-#' @import plotrix
-#' @export
+#'@export
+#'@import plotrix
+#'
 #'
 
 if (! requireNamespace("plotrix", quietly = TRUE)) {
