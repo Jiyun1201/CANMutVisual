@@ -110,6 +110,9 @@ An overview of the package is illustrated below:
 ![](./inst/extdata/CANMutVisual_Overview.png)
 
 
+![](./inst/extdata/shiny.png)
+
+
 ## Contributions
 
 The author of this package is Jiyun Won.
